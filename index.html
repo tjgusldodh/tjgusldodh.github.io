@@ -2,16 +2,17 @@
 <html>
     <head>
         <title>홍길동의 홈페이지</title>
-        <link href="./practice.css" rel="stylesheet" type="text/css">
+          <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/b17aa6eda6.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./blog_list.html">Blog</a>
-            <a href="./about_meme.html">About Me</a>
-        </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+              <a class="navbar-brand" href="#">Do it django</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                   </li>
@@ -46,32 +47,34 @@
                   </form>
                  </div>
               </div>
-         </nav>
+          </nav>
 
      <!-- Modal -->
      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="logineModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+        <div class="modal-content">
             <div class="modal-header">
-             <h5 class="modal-title" id="loginModalLabel"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Log In</h5>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-             </button>
+            <h5 class="modal-title" id="loginModalLabel"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Log In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
             </div>
             <div class="modal-body">
                 <div class="row">
                      <div class="col-md-6">
-                       <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fa-brands fa-google"></i>&nbsp;Log in with Google</button>
-                       <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fa-regular fa-envelope"></i>&nbsp;Log in with E-mail</button>
+                      <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fa-brands fa-google"></i>&nbsp;Log in with Google</button>
+                      <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fa-regular fa-envelope"></i>&nbsp;Log in with E-mail</button>
                      </div>
                      <div class="col-md-6">
-                       <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fa-regular fa-envelope"></i>&nbsp;Sign up with E-mail</button>
+                      <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fa-regular fa-envelope"></i>&nbsp;Sign up with E-mail</button>
                      </div>
                  </div>
             </div>
-          </div>
+
+
+            </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
         </div>
